@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        /* Some basic styling for the calculator */
+        .calculator {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <br>
+        <button onclick="clearInput()">C</button>
+        <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <br>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendNumber('+')">+</button>
+        <br>
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendNumber('-')">-</button>
+        <br>
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendNumber('*')">*</button>
+        <br>
+        <button onclick="appendNumber('/')">/</button>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
